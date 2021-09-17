@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Shared
+namespace BlazorApp.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,8 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/todo")]
+    public partial class Todo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -90,16 +91,19 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\Shared\NavMenu.razor"
+#line 18 "C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\Pages\Todo.razor"
        
-    private bool collapseNavMenu = true;
+    private List<TodoItem> todos = new();
+    private string newTodo;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+      private void AddTodo()
+      {
+        if(!string.IsNullOrWhiteSpace(newTodo))
+        {
+          todos.Add(new TodoItem { Title = newTodo });
+          newTodo = string.Empty;
+        }
+      }
 
 #line default
 #line hidden

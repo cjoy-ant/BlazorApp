@@ -56,3 +56,5 @@ C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\ref\Blaz
 C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\BlazorApp.pdb
 C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
 C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\cjoya\Documents\Micorsoft Tutorials\BlazorApp\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
